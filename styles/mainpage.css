@@ -1,102 +1,104 @@
-html {
-     height: 100%; 
-     font-size: 100%;
- }
- 
- body {
-     font-family: 'Frank Ruhl Libre', sans-serif;
-     color: white;             
-     min-height: 100%;         
-     background-color: 	#05132D; 
-     text-shadow: 1px 1px 0px black;
-     
+HTML {
+  background-color: #05132D;      
 }
 
-.page-centre {
-    display: block;
-    position: absolute;
-    background-image: url(../assets/7036557-city-night-photography-11058.jpg);
+body {}
+
+.picture {
+background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
     background-size: 100% 100%;
     width: 100%;
-    min-height: 100%;
-    top: 70px;
-    /*left: 1%;*/
+    min-height: 200px;
+    height: 200px;
+}
+
+.text-in-picture {
+position: relative;
+top: 30px;
+padding-left: 10%;    
 }
 
 .topbar {
-    
-
-min-height: 70px;
-width: 100%;  
 background-color: #05132D;
-position: relative;
-display: inline-block;
-    
+height: 30px;    
+}
+
+
+.menu{    
+margin-top:2px;    
+color: white;
+}
+
+.name{
+margin:auto;
+margin-top:2px;
+color: white;
+text-align: center;    
 }
 
 .dropdown {
 position: relative;
 display: inline-block;
-min-width: 150px;    
-margin-right: 10%;
-position: absolute;
+/*min-width: 150px;*/    
 text-align: center;    
 cursor: pointer;
-min-height: 70px;
-left: 20px;
-top: 20px;    
+/*min-height: 70px;*/
+/*left: 20px;
+top: 20px;  */  
 z-index: 99;   
-      
+/*min-width: 210px;*/ 
+    
 }
 
 .dropbtn {
     
-background-color: dimgray;
-/*background-color: #0D00A4;*/
-box-shadow: 2px 2px 2px #05132D;   
-font-size: 35px; 
+background-color: #05132D;
+/*box-shadow: 2px 2px 2px #05132D;*/   
+/*font-size: 15px; */
 color: white; 
-position: relative;
-text-align: center;    
-width: 220px;
-height: 55px;    
-min-width: 70px;
-min-height: 55px;
-padding-top: 20px;
-border: 1px solid black;
-text-shadow: 1px 1px 0px black;
-
+/*position: relative;
+text-align: center; */
+/*border: 1px solid black;*/
+/*min-width: 210px;
+width: 230px; */ 
+height: 30px;    
+    
 }   
 
 .dropdown-content {
     display: none;
-    top: 75px;
+    top: 30px;
     position: absolute;
     background-color: dimgrey;
-    width: 220px;
-    min-width: 150px;
+    width: 30px;
+    min-width: 210px;
     border: 1px solid #05132D; 
-    box-shadow: 2px 2px 2px #05132D; 
+    box-shadow: 2px 2px 2px #05132D;*/
+    color: #05132D;
+    min-height: 50px; 
+    /*text-shadow: none;*/ 
+    
 }
 
 .dropdown-content a {
-    color: aliceblue;
+   /* color: aliceblue;
     padding: 12px 16px;
-    text-decoration: none;
+    text-decoration: none;*/
     display: block;
-    border-top: 1px solid #05132D;
-    text-align: left;
+  /*  border-top: 1px solid #05132D;
+    text-align: left;*/
     
 }
 
 .dropdown-content a:hover {
     border-left: 10px solid #05132D;
+
 }
 
-.dropbtn a:hover {background-color: #f1f1f1}
+/*.dropbtn a:hover {background-color: #f1f1f1}*/
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -108,123 +110,20 @@ text-shadow: 1px 1px 0px black;
     opacity: 0.8; */
 }
 
-.topbar .link {
-
-width: 5%;
-margin-top: 15px;    
-margin-right: 10%;
-position: relative;
-float: right;
-text-align: center;
-display: table-cell;
-padding-top: 4px; 
-padding-bottom: 2px;    
-border-radius: 1px;   
+.skills {
+background-color: cadetblue;    
     
 }
 
-.topbar .link img {
-/*border-style: solid;
-border-color: blue; */   
-border-radius: 100px;    
-cursor: pointer; 
-opacity: 0.7;   
-    
+.projects {
+margin: auto;  
+background-color: cornflowerblue;    
 }
 
-.topbar .link img:hover {
-    opacity: 1;
-    transition: 0.1s ease-in-out;
+.projects-title{
+margin:auto;    
 }
 
-.attention-grabbing p{ 
-
-position: relative;
-left: 3%; 
-top: 10px;    
-padding-left: 10px;
-    
+.carousel{
+margin:auto;    
 }
-
-.attention-grabbing #questions {
-position: relative;
-left: 3%;    
-font-family: 'Shadows Into Light', cursive;
-font-size: 30px;
-
-}
-
-.project-showcase .link {  
-text-align: left;    
-padding-left: 2%;
-
-}
-
-.project-showcase img { 
-position: relative;
-text-align: center;    
-left: 15%;
-opacity: 0.7;    
-    
-}
-
-.project-showcase img:hover {  
-opacity: 1; 
-transition: 0.1s ease-in-out;
-    
-}
-
-.project-showcase {
-     position: relative;
-     width: 100%;
-  }
- 
- .project {
-  /*   display: table-cell;
-     position: relative;*/
-     width: 50%;
-     padding: 2rem;
-     text-align: center;
-     border-color: white;
-     border-radius: 25px;
-     
-}
-
-.footer {
-position: absolute;    
-display:block;    
-width: 100%;
-min-height: 70px;
-background-color: #05132D;
-    
-}
-
-.footer a {
-
-position: relative;    
-padding-left: 10px;
-padding-right: 10px;
-background-color: #0D00A4;
-cursor: pointer; 
-text-align: center;
-margin:auto;
-margin-top: 25px;
-display: block;
-width: 10%;
-text-shadow: none;
-box-sizing: border-box;
-border-radius: 25px;
-border-color: black;    
-color: white;
-    
-}
-
-.footer a:link    {color:white; text-decoration:none}
-.footer a:hover   {color:black; text-decoration:none}
-    
-a:link    {color:white; text-decoration:none}
-a:visited {color:red; text-decoration:none}
-a:hover   {color:grey; text-decoration:none}
-a:active  {color:blue; text-decoration:none}
-
-
