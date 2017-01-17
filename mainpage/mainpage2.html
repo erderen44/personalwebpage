@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+ <html lang="en">
+     <head>   
+         <meta charset="utf-8"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Jon Whitfield</title>
+         <link href="https://fonts.googleapis.com/css?family=Merriweather|Shadows+Into+Light" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Frank+Ruhl+Libre|Lobster" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+         <link rel="stylesheet" type="text/css" href="../styles/mainpage2.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     </head>
+     <body>
+        <a name="top"></a>
+        <div class="container topbar">
+            <div class="row">
+                <div class = "col-3 dropdown">
+                <div class = "dropbtn"><span id="namebutton">Jon Whitfield</span></div>
+                        <div class="dropdown-content">
+                        <a>Resume / CV</a>
+                        <a>Link 2</a>
+                        <a>Link 3</a>
+                        </div>
+                </div>    
+                <div class = "col toplinks">
+                    <div class="row links">
+                        <div class="col-2 link"><a class="link1" href="www.google.com"><img src="../assets/e-mail.jpg" alt="E-mail" style="width:30px;height:30px;"></a></div>
+                        <div class="col-2 link"><a class="link1" href="www.google.com"><img src="../assets/facebook.jpg" alt="Facebook" style="width:30px;height:30px;"></a></div>
+                        <div class="col-2 link"><a class="link1" href="www.google.com"><img src="../assets/skype.jpg" alt="Skype" style="width:30px;height:30px;"></a></div>
+                        <div class="col-2 link"><a class="link1" href="www.google.com"><img src="../assets/line.jpg" alt="Line" style="width:30px;height:30px;"></a></div>
+                    </div>
+                </div>    
+            </div>
+         </div>    
+         
+        <div class="container page-top">
+            <div class="row no-gutters">
+                <div class="col-lg-12 questions1">I'm a really experienced web developer!</div>
+                <div class="col-lg-12 questions1">Do you love value for money?</div>
+                <div class="col-lg-12 questions2">If so, then you've hit the jackpot!</div>
+                <div class="col-lg-12 questions2">Blah, blah, etc. etc. </div>
+            </div>
+        </div>    
+        <div class="container projects">
+            <div class="row no-gutters project1">
+                            <div class="col-3 col-xs-12 project"><img src="../assets/bloc_jams.png" alt="Bloc_Jams music player" style="width:200px;height:200px;"></div>
+                            <div class="col-lg-9 col-xs-12 comment"><a href="www.google.com">Here's a really amazing project that I made single-handedly.</a></div>
+            </div>    
+            <div class="row no-gutters project2">   
+                             <div class="col-3 col-xs-12 project"><img src="../assets/bloc_jams.png" alt="Bloc_Jams music player" style="width:200px;height:200px;"></div>
+                            <div class="col-lg-9 col-xs-12 comment"><a href="www.google.com">Here's a really amazing project that I made single-handedly.</a></div>
+             </div>
+             <div class="row no-gutters project3">  
+               
+                             <div class="col-3 col-xs-12 project"><img src="../assets/bloc_jams.png" alt="Bloc_Jams music player" style="width:200px;height:200px;"></div>
+                            <div class="col-lg-9 col-xs-12 comment"><a href="www.google.com">Here's a really amazing project that I made single-handedly.</a></div>
+             </div>
+             <div class="row no-gutters project4"> 
+                
+                             <div class="col-3 col-xs-12 project"><img src="../assets/bloc_jams.png" alt="Bloc_Jams music player" style="width:200px;height:200px;"></div>
+                            <div class="col-lg-9 col-xs-12 comment"><a href="www.google.com">Here's a really amazing project that I made single-handedly.</a></div>  
+             </div>
+        </div>    
+            
+            
+        <div class="container footer">
+            <div class="row">
+                <div class="col-2 toTop"><a>Back to top!</a></div>
+            </div>    
+        </div> 
+             
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+        <script>
+        var test = function(){ 
+        var selector = document.getElementsByClassName('container projects');
+        console.log(selector.length);
+        console.log(selector[0]);
+        console.log(selector[0][0]);    
+       selector[0][1].style.color = "green";
+        }
+         test();
+         </script> 
+    </body>
+ </html>

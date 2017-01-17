@@ -1,0 +1,247 @@
+html {
+     height: 100%; 
+     font-size: 100%;
+ }
+ 
+ body {
+     font-family: 'Frank Ruhl Libre', sans-serif;
+     /*color: white; */            
+     min-height: 100%;         
+     /* background-color: 	#05132D; */
+     background-color: green;
+     text-shadow: 1px 1px 0px black;
+     
+}
+
+.page-top {
+ 
+    background-image: url(../assets/7036557-city-night-photography-11058.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 220px;
+    height: 220px;
+   /* margin-bottom: 10px;*/
+    
+}
+
+.comment {
+padding-top:7%;    
+       
+}
+
+.topbar {
+    
+min-height: 70px;
+width: 100%;  
+background-color: #05132D;
+    
+}
+
+#namebutton {
+position: relative;
+text-shadow: 2px 1px 0px black;   
+    
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+min-width: 150px;    
+text-align: center;    
+cursor: pointer;
+/*min-height: 70px;*/
+left: 20px;
+top: 20px;    
+z-index: 99;   
+min-width: 210px; 
+    
+}
+
+.dropbtn {
+    
+background-color: dimgray;
+box-shadow: 2px 2px 2px #05132D;   
+font-size: 35px; 
+color: white; 
+position: relative;
+text-align: center; 
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;    
+border: 1px solid black;
+min-width: 210px;
+width: 230px;   
+/*border-radius: 1px;*/   
+    
+}   
+
+.dropdown-content {
+    display: none;
+    top: 74px;
+    position: absolute;
+    background-color: dimgrey;
+    width: 210px;
+    min-width: 210px;
+    border: 1px solid #05132D; 
+    box-shadow: 2px 2px 2px #05132D;
+    color: #05132D;
+    text-shadow: none; 
+    
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid #05132D;
+    text-align: left;
+    
+}
+
+.dropdown-content a:hover {
+    border-left: 10px solid #05132D;
+
+}
+
+.dropbtn a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.dropbtn:hover {
+    /*background-color: #3e8e41;
+    opacity: 0.8; */
+}
+
+.topbar .link {
+
+width: 5%; 
+position: relative;
+left: 20%;    
+float: right;
+text-align: center;
+padding-top: 20px; 
+padding-bottom: 2px;    
+border-radius: 1px;   
+    
+}
+
+.topbar .link img {
+border-radius: 100px;    
+cursor: pointer; 
+opacity: 0.7;   
+    
+}
+
+.topbar .link img:hover {
+    opacity: 1;
+}
+
+.questions1 {
+position: relative;
+left: 3%;    
+font-family: 'Shadows Into Light', cursive;
+font-size: 30px;
+left: 4%; 
+top: 40px;    
+padding-left: 10px;
+  
+}
+
+.questions2 {
+position: relative;
+left: 3%;    
+/*font-family: 'Shadows Into Light', cursive;*/
+font-size: 20px;
+left: 4%; 
+top: 40px;    
+padding-left: 10px;
+    
+}
+
+.projects {
+background-color: #05132D;
+    
+}
+
+.project2, .project4 {
+background-color: black;
+
+}
+
+
+
+.projects .comment {  
+text-align: left;    
+padding-left: 2%;
+padding-top: 80px;    
+
+}
+
+.project img { 
+text-align: center;    
+opacity: 0.7;    
+padding-top: 10px;    
+    
+}
+
+.project img:hover {  
+opacity: 1; 
+transition: 0.1s ease-in-out;
+    
+}
+
+.footer {
+
+width: 100%;
+min-height: 70px;
+background-color: #05132D;
+    
+}
+
+.footer .toTop {
+
+position: relative;    
+padding-left: 10px;
+padding-right: 10px;
+background-color: #0D00A4;
+cursor: pointer; 
+text-align: center;
+margin:auto;
+margin-top: 25px;
+display: block;
+width: 10%;
+text-shadow: none;
+box-sizing: border-box;
+border-radius: 25px;
+border-color: black;    
+color: white;
+    
+}
+
+.footer .toTop:link    {color:white; text-decoration:none}
+.footer .toTop:hover   {color:black; text-decoration:none}
+    
+a:link    {color:white; text-decoration:none}
+a:visited {color:red; text-decoration:none}
+a:hover   {color:grey; text-decoration:none}
+a:active  {color:blue; text-decoration:none}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
