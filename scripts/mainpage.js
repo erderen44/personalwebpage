@@ -11,7 +11,7 @@ function currentPic(n) {
 
 function showProject(n) {
   var i;
-  var projectsToShow = document.getElementsByClassName("col-12 projects");
+  var projectsToShow = document.getElementsByClassName("projects");
   var dots = document.getElementsByClassName("dot");
   if (n > projectsToShow.length) {projectNumber = 1} 
   if (n < 1) {projectNumber = projectsToShow.length}
@@ -21,7 +21,8 @@ function showProject(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
+   
   projectsToShow[projectNumber-1].style.display = "block"; 
   dots[projectNumber-1].className += " active";
-console.log(projectsToShow[projectNumber-1].style.display);    
+console.log(projectsToShow[projectNumber-1]);    
 }

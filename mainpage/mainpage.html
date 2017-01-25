@@ -15,9 +15,9 @@
                 <div class = "col-xs-1 dropdown">
                 <div class = "dropbtn"><span id="namebutton">☰</span></div>
                         <div class="dropdown-content">
-                        <a>Resume / CV</a>
-                        <a>Contact</a>
-                        <a>Link 3</a>
+                        <p>Resume / CV</p>
+                        <p>Contact</p>
+                        <p>Link 3</p>
                         </div>
                 </div>    
                 <div class="col-xs-11 name">Jon Whitfield</div>
@@ -28,7 +28,7 @@
         <div class="">
             <div class="">
                 <div class="picture">
-                <div class="text-in-picture">This is some text</div>
+                    <div class="col-sm-6 text-in-picture"><span>Hi! I'm Jon. <br> I'm a full-stack web developer and teacher currently living and working in Asia.</span></div>
                 </div>
             </div>
         </div>
@@ -64,29 +64,26 @@
             </div>
             <div class="row">
                 <div class="carousel">
-                    <div class="col-12 projects fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="../assets/bloc_jams.png" style="width:100%">
-                        <div class="text">Caption Text</div>
+                    <div class="col-8 projects fade">
+                        <img class="projectImage" src="../assets/bloc_jams.png" style="width:70%">
+                        <div class="captionText">1 / 3 <br>Bloc Jams is a groovy music player that lets you listen to favourite tunes while surfing the web. It's expertly built using JQuery.</div>
                     </div>
 
-                 <div class="col-12 projects fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="../assets/bloc_jams.png" style="width:100%">
-                        <div class="text">Caption Two</div>
+                 <div class="col-8 projects fade">
+                        <img class="projectImage" src="../assets/bloc_jams.png" style="width:70%">
+                        <div class="captionText">2 / 3 <br>Caption Two</div>
                     </div>
 
-                <div class="col-12 projects fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="../assets/bloc_jams.png" style="width:100%">
-                        <div class="text">Caption Three</div>
+                <div class="col-8 projects fade">
+                        <img class="projectImage" src="../assets/bloc_jams.png" style="width:70%">
+                        <div class="captionText">3 / 3 <br>Caption Three</div>
                     </div>
                 <a class="prev" onclick="changePic(-1)">&#10094;</a>
                 <a class="next" onclick="changePic(1)">&#10095;</a>
                 </div>
                 <br>
 
-                <div style="text-align:center">
+                <div class="theDots" style="text-align:center">
                     <span class="dot" onclick="currentPic(1)"></span> 
                     <span class="dot" onclick="currentPic(2)"></span> 
                     <span class="dot" onclick="currentPic(3)"></span> 
