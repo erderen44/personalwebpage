@@ -21,7 +21,7 @@ function showProject(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-   
+//console.log state of current picture's opacity
   projectsToShow[projectNumber-1].style.display = "block"; 
   dots[projectNumber-1].className += " active";
 console.log(projectsToShow[projectNumber-1]);    

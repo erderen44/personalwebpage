@@ -16,49 +16,65 @@ width: 100%;
 .topbar {
 
 height: 15%;
-min-height: 15%;   
+min-height: 15%;
+position:relative;    
     
 }
 
 .topname {    
-display: inline-block;
-position: absolute;
-min-width: 66%;
-left: 3%;
-margin-top: 3%;    
-border: 2px solid blue;    
+    display: inline-block;
+    position: absolute;
+    font-size: 200%;    
+    min-width: 66%;
+    left: 4%;  
+    color: #05132D;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);   
 }
 
 #firstname #lastname {
-  
+    
 }
 
-#firstname {}
+#firstname {
+    color: #05132D; 
+}
 
-#lastname {}
+#lastname {
+    color: darkred;
+}
 
 .topcontactbutton {
-    right: 3%;
-    margin-top: 3%;
+    right: 5%;
     display: inline-block;
     position: absolute;
     min-width: 33%;
     text-align: right;
-    border: 2px solid green;
-    
+    top: 50%;
+    transform: translate(0, -50%);
+   
 } 
 
+#topcontact {
+     color: #05132D;  
+}
 
 .pic1 {
 background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-  /*  background-size: 100% 100%; */
     background-size: cover;  
     width: 100%;
     min-height: 85%;
     height: 85%;
+    color: white;
+    font-size: 220%;
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 35%;
+   
 
 }
 
@@ -66,19 +82,25 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 
     min-height: 85%;
     height: 85%;
-    padding-left: 3%;
-    border: 2px solid green;
-    padding-top: 3%;
+    padding-left: 7%;
+    padding-top: 12%;
+    font-size: 220%;    
+    color: #05132D;
 }
 
 .pic2 {
- background-image: url(../assets/lanterns.jpg);
- background-repeat: no-repeat;
+    background-image: url(../assets/6926839-hi-tech-keyboard.jpg);
+    background-repeat: no-repeat;
     background-position: center; 
-   background-size: cover;  
+    background-size: cover;  
     width: 100%;
     min-height: 85%;
-    height: 85%;    
+    height: 85%; 
+    color: white;
+    font-size: 220%;
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 12%;
 }
 
 .skills-desktop {
@@ -87,11 +109,9 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .skills-table {
-    margin-top: 3%;
+    margin-top: 4%;
     width: 100%;
     max-height: 100%;
-    border: 2px solid pink;
-    
     }  
 
 .row {
@@ -99,26 +119,42 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .skill {
-    border: 2px solid red;
     min-width: 33%;
     display: table-cell; 
 }
 
 .skill img {
-    border: 2px solid blue;
     margin: auto;
     display: block;
     margin:auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 100px;
+    width: 100px;
+}
+
+.jqueryicon {margin-top: 2%;}
+
+.skills-desktop {
+   
+}
+
+.skills-title{
+color: #05132D;
+text-align: left; 
+margin-top: 3%; 
+font-size: 220%;
+padding-left: 2%;
+   
 }
 
 .skill-caption {
-    border: 2px solid red;
     min-width: 33%;
     display: table-cell; 
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    color:#05132D;
     
 }   
 
@@ -130,11 +166,10 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .pic3 {
-   background-image: url(../assets/6926839-hi-tech-keyboard.jpg);
+   background-image: url(../assets/codingnumbers.jpg);
     background-repeat: no-repeat;
  
     background-position: center; 
-  /*  background-size: 100% 100%; */
     background-size: cover;  
     width: 100%;
     min-height: 85%;
@@ -144,22 +179,27 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .projects-desktop {
-    min-height: 120%;
-    height: 120%;    
+    min-height: 150%;
+    height: 150%;    
+}
+
+#projects-intro-text {
+    margin-top: 3%; 
+    font-size: 220%;
+    padding-left: 2%;
+    color: #05132D;
 }
 
 .projects-table {
     margin-top: 3%;
     width: 100%;
     max-height: 100%;
-    border: 2px solid brown;
 }
 
-.projects-table .row {border: 2px solid purple; }
+.projects-table .row {padding-left: 2%; }
  
 .project {
-    min-width: 50%;
-    border: 2px solid orange; 
+    min-width: 50%; 
 }
 
 .project img {
@@ -167,7 +207,6 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     width: 50%;
     max-height: 200px;
     max-width: 200px;
-    border: 2px solid blue;
     margin: auto;
     display: block;
 }
@@ -177,22 +216,24 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .project-caption {
-    border: 2px solid red;
     min-width: 50%;
+    max-width: 50%;
     display: table-cell; 
     text-align: center;
+    color: #05132D;
 }
 
 .pic4 {
-    background-image: url(../assets/7036557-city-night-photography-11058.jpg);
+    background-image: url(../assets/colours.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-  /*  background-size: 100% 100%; */
     background-size: cover;  
     width: 100%;
     min-height: 85%;
     height: 85%;
+    filter: brightness(70%);
+    filter: contrast (200%);
     
     
 }
@@ -202,23 +243,27 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .footer {
-    min-height: 10%;
-    height: 10%;
-    
+    min-height: 15%;
+    height: 15%;
+    text-align: center;
+    background-color:#05132D; 
+    padding-top: 1%;
 }
   
-#footerContactButton {
+#footerContactButton  {
     
+    
+    color: white;
+    transform: translate(0, -50%); 
     text-align: center;
-    margin-top:1%; 
-    margin-bottom: 1%;
 }
     
-#footerToTopButton {
+#footerToTopButton  {
    
-   text-align: center;
-   margin-top:1%; 
-   margin-bottom: 1%;
+   
+    color: white; 
+    transform: translate(0, -50%); 
+    text-align: center;
 }
     
 
@@ -240,9 +285,14 @@ body, html {
 }
 
 .topbar {}
+  position:relative; 
+  height: 20%;
+  min-height: 20%;
     
 .topname {
-  margin-top: 8%;       
+  position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);        
     }    
 
 #firstname, #lastname {}
@@ -252,39 +302,39 @@ body, html {
 #lastname {}
 
 .topcontactbutton { 
-    margin-top: 8%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);   
+    
     }
     
-.picture {
+.pic1 {
 background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
     background-size: 100% 100%; 
-  
-}
-
-.pic1 {
-    
-    
+    padding-top: 125%;
     
 }
 
 .introtext {
-    
-    
+    padding-top: 25%;
+  
     
 }
 
 .pic2 {
-    
-    
+     padding-top: 25%;
     
 }
 
+.skills-title-mobile {
+padding-left: 5%; 
+font-size: 220%;    
+    }    
+    
 .skills-desktop {
-    min-height: 85%;
-    height: 85%; 
     display: none;
     
 }
@@ -293,20 +343,17 @@ table {
     width: 100%;
     margin-top: 10%;
     margin-bottom: 5%;
-
+    margin-right: 5%;
     }    
 
-    
 .skills-mobile {
     min-height: 85%;
     height: 85%; 
     display: table; 
-    border: 2px solid green;
     min-width: 100%;
 }
 
 .skill {
-    border: 2px solid red;
     min-width: 50%;
     display: table-cell; 
     align-content: center;
@@ -315,18 +362,14 @@ table {
 .skill img {
     display:block;
     margin:auto;
-    
-        
+    width: 90px;
 }    
-    
-
 .skill-caption {
-    border: 2px solid red;
     min-width: 50%;
     display: table-cell; 
     text-align: center;
     margin-bottom: 0%;
-    
+    padding-top: 10%;   
 }
     
 .pic3 {    
@@ -337,20 +380,26 @@ table {
     height: 120%;
     display: table;
     margin: auto;
+    text-align: center;
 }
 
+#projects-intro-text-mobile {
+    margin-top: 3%; 
+    font-size: 220%;
+    padding-left: 2%;
+    color: #05132D;
+}
+    
 .projects-table-mobile {
     margin-top: 0;
     width: 100%;
     max-height: 100%;
-    border: 2px solid yellow;
 }
 
-.projects-table-mobile .row {border: 2px solid purple; }
+.projects-table-mobile .row {}
  
 .project {
     min-width: 100%;
-    border: 2px solid orange; 
 }
 
 .project img {
@@ -358,9 +407,12 @@ table {
     width: 100%;
     max-height: 200px;
     max-width: 200px;
-    border: 2px solid blue;
     margin: auto;
     display: block;
+}
+.project-caption {
+    font-size: 110%;
+    padding-bottom: 5%;
 }
 
 .projects-desktop {
@@ -368,40 +420,38 @@ table {
 }
 
 .project-caption {
-    border: 2px solid red;
     min-width: 100%;
     display: table-cell; 
     text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
 }
     
-    
-    
-
-
 .pic4 {
-    
-    
-    
+   
 }
-
-.conclusion {
     
-    
-    
+.conclusion {   
 }
 
 .footer {
-
+   text-align: center;
+    padding-top: 5%;
+  
 }
 
 #footerContactButton {
-    margin-top:5%;
-    margin-bottom: 3%;
+    color: white;
+   
+    transform: translate(0, -50%); 
+    text-align: center;
     }
     
 #footerToTopButton {
-    margin-top:3%;
-    margin-bottom: 2%;
+    color: white;
+    transform: translate(0, -50%); 
+    text-align: center;
+  
 }
 
 }
@@ -414,10 +464,13 @@ table {
 .topbar {
     height: 20%;
     min-height: 20%;
+    position: relative;
     }
     
 .topname {
-  margin-top: 3%;       
+  position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);          
     }    
 
 #firstname, #lastname {}
@@ -427,15 +480,41 @@ table {
 #lastname {}
 
 .topcontactbutton { 
-    margin-top: 3%;
+   position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);   
     }
-        
+ 
+.pic1 {
+    min-height: 95%;
+    height: 95%; 
+    
+    
+}
+
+.introtext {
+   min-height: 95%;
+   height: 95%;  
+   padding-top: 8%;
+    
+}
+
+.pic2 {
+    min-height: 95%;
+    height: 95%; 
+    color: white;
+    font-size: 220%;
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 8%; 
+    
+    
+}       
     
  .skills-desktop {
     min-height: 85%;
     height: 85%; 
     display: table; 
-    border: 2px solid green;
     min-width: 100%;
 }
 
@@ -451,12 +530,10 @@ table {
     min-height: 85%;
     height: 85%; 
     display: none; 
-    border: 2px solid green;
    
 }
 
 .skill {
-    border: 2px solid red;
     min-width: 33%;
     display: table-cell; 
     align-content: center;
@@ -469,7 +546,6 @@ table {
 }    
 
 .skill-caption {
-    border: 2px solid red;
     min-width: 33%;
     display: table-cell; 
     text-align: center;
@@ -477,8 +553,8 @@ table {
 }  
 
 .projects-desktop {
-    min-height: 125%;
-    height: 125%;
+    min-height: 130%;
+    height: 130%;
     display: table;
     margin: auto;
     width:100%;
@@ -488,14 +564,13 @@ table {
     margin-top: 0;
     width: 100%;
     max-height: 100%;
-    border: 2px solid brown;
+    margin-bottom: 2%;
 }
 
-.projects-table .row {border: 2px solid purple; }
+.projects-table .row {padding-left: 2%; }
  
 .project {
     min-width: 50%;
-    border: 2px solid orange; 
 }
 
 .project img {
@@ -503,29 +578,35 @@ table {
     width: 50%;
     max-height: 200px;
     max-width: 200px;
-    border: 2px solid blue;
     margin: auto;
     display: block;
 }
+    
+#jqueryicon {
+    max-height:50px;
+    }
 
 .projects-mobile {
     display: none;
 }
+
+#projects-intro-text {padding-left: 4%;}   
     
 .footer{
-    height:15%;
-    max-height: 15%;
-    
+    height:22%;
+    min-height: 22%;
+    padding-bottom: 2%;
 }    
     
  #footerContactButton {
-    margin-top:1%;
-    margin-bottom: 1%;
+    
+    color: white;
+    text-align: center; 
     }
     
 #footerToTopButton {
-    margin-top:1%;
-    margin-bottom: 1%;
+    color: white;
+    text-align: center;
 } 
 
 }
