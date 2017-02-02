@@ -9,8 +9,8 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
      </head>
      <body>
-         <div class="topbar">
-             <div class="topname">
+         <div class="topbar" id="topbar-waypoint">
+             <div class="topname" id="topname-waypoint">
                  <span id="firstname">Jon</span><span id=lastname>Whitfield</span>
              </div>
              <div class="topcontactbutton">
@@ -18,12 +18,12 @@
              </div>
          </div>     
          
-         <div class="pic1">Hi! I'm Jon.</div>
-         <div class="introtext">An aspiring web developer<br> currently living and working<br> in Taiwan.</div>
-         <div class="pic2">With a passion<br>for building <br>user-friendly websites<br> and web apps.</div>
+         <div class="pic1" id=pic1-waypoint>Hi! I'm Jon.</div>
+         <div class="introtext" id="introtext-waypoint">An aspiring web developer<br> currently living and      working<br> in Taiwan.</div>
+         <div class="pic2" id="pic2-waypoint">With a passion<br>for building <br>user-friendly websites<br> and web apps.</div>
          <div class="skills-desktop">
               <div class="skills-title">Using: Javascript, HTML5, CSS3, JQuery, Bootstrap and Angular JS.</div>
-             <table class="skills-table">
+             <table class="skills-table" id="skills-table-waypoint">
                 <tr class="row">
                     <td class="skill"><img src="../assets/html%20icon.jpg"></td>
                     <td class="skill"><img src="../assets/css%20icon.jpg"></td>
@@ -75,11 +75,11 @@
                 </tr>    
              </table>     
          </div>
-         <div class="pic3"></div>
+         <div class="pic3" id="pic3-waypoint"></div>
          <div class="projects-desktop">
              <div><span id="projects-intro-text" >Apps like:</span></div>
-             <table class="projects-table">
-                <tr class="row">
+             <table class="projects-table" id="projects-table-waypoint">
+                <tr class="row" id="projects-row1">
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                 </tr>   
@@ -87,7 +87,7 @@
                     <td class="project-caption"><span style="color: darkred;">Bloc Jams</span> Built with CSS,HTML and JQuery, this hip music player lets you listen to awesome tunes on the go!</td>
                     <td class="project-caption"><span style="color: darkred;">Bloc Jams</span> Built with CSS,HTML and JQuery, this hip music player lets you listen to awesome tunes on the go!</td>
                 </tr>    
-                <tr class="row">
+                <tr class="row" id="projects-row2">
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                 </tr>   
@@ -95,7 +95,7 @@
                     <td class="project-caption"><span style="color: darkred;">Bloc Jams</span> Built with CSS,HTML and JQuery, this hip music player lets you listen to awesome tunes on the go!</td>
                     <td class="project-caption"><span style="color: darkred;">Bloc Jams</span> Built with CSS,HTML and JQuery, this hip music player lets you listen to awesome tunes on the go!</td>
                 </tr>    
-                <tr class="row">
+                <tr class="row" id="projects-row3">
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                     <td class="project"><img src="../assets/bloc_jams.png"></td>
                 </tr>   
@@ -135,7 +135,7 @@
              </table>     
          </div>
          
-         <div class="pic4"></div>
+         <div class="pic4" id="pic4-waypoint"></div>
          <div class="conclusion"></div>
          <div class="footer">
              <div><a id="footerContactButton" href="#">Contact</a></div>
@@ -147,6 +147,7 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
-        <script src=../scripts/newmainpage.js></script> 
+        <script src="../scripts/waypointsdirectory/lib/noframework.waypoints.min.js"></script>
+        <script src=../scripts/newmainpage.js></script>
     </body>
  </html>
