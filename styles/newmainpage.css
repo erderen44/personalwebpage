@@ -1,24 +1,28 @@
 HTML {
-  width: 100%;    
+    width: 100%;    
 }
 
 body {
-    
-width: 100%;    
+    margin: 0px;
+    width: 100%;    
 }
 
 body, html {
     
-height: 100%;
-width: 100%;    
+    height: 100%;
+    width: 100%;    
 }
 
 .topbar {
 
-height: 15%;
-min-height: 15%;
-position:relative;    
-    
+    height: 15%;
+    min-height: 15%;
+    position:relative; 
+
+}
+
+#topbar-waypoint {
+    opacity: 0.1;   
 }
 
 .topname {    
@@ -30,11 +34,11 @@ position:relative;
     color: #05132D;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);   
+    transform: translate(0, -50%);
 }
 
-#firstname #lastname {
-    
+#topname-waypoint {
+  /*   opacity: 0.1;*/
 }
 
 #firstname {
@@ -57,7 +61,8 @@ position:relative;
 } 
 
 #topcontact {
-     color: #05132D;  
+    color: #05132D;  
+    /* opacity: 0.1;*/
 }
 
 .pic1 {
@@ -74,7 +79,7 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     text-align: left;
     padding-left: 7%;
     padding-top: 35%;
-   
+    opacity: 0.1;
 
 }
 
@@ -86,6 +91,10 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     padding-top: 12%;
     font-size: 220%;    
     color: #05132D;
+}
+
+#introtext-waypoint {
+    opacity: 0.4;
 }
 
 .pic2 {
@@ -101,6 +110,7 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     text-align: left;
     padding-left: 7%;
     padding-top: 12%;
+    opacity: 0.3;
 }
 
 .skills-desktop {
@@ -108,10 +118,12 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     height: 85%; 
 }
 
+
 .skills-table {
     margin-top: 4%;
     width: 100%;
     max-height: 100%;
+    opacity: 0.4;
     }  
 
 .row {
@@ -130,23 +142,22 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
     margin-top: 1%;
     margin-bottom: 1%;
     height: 100px;
-    width: 100px;
+    width: 100px;  
+   
 }
 
-.jqueryicon {margin-top: 2%;}
-
-.skills-desktop {
-   
+.jqueryicon {
+    margin-top: 2%;
 }
 
 .skills-title{
-color: #05132D;
-text-align: left; 
-margin-top: 3%; 
-font-size: 220%;
-padding-left: 2%;
-   
+    color: #05132D;
+    text-align: left; 
+    margin-top: 3%; 
+    font-size: 220%;
+    padding-left: 2%;  
 }
+
 
 .skill-caption {
     min-width: 33%;
@@ -168,12 +179,12 @@ padding-left: 2%;
 .pic3 {
    background-image: url(../assets/codingnumbers.jpg);
     background-repeat: no-repeat;
- 
     background-position: center; 
     background-size: cover;  
     width: 100%;
     min-height: 85%;
     height: 85%;
+    opacity:0.3;
     
     
 }
@@ -196,8 +207,15 @@ padding-left: 2%;
     max-height: 100%;
 }
 
+
 .projects-table .row {padding-left: 2%; }
  
+#projects-row1 img, #projects-row2 img, #projects-row3 img{
+    opacity: 0.8;
+    transition-duration: 0.1s;
+}
+
+
 .project {
     min-width: 50%; 
 }
@@ -209,6 +227,18 @@ padding-left: 2%;
     max-width: 200px;
     margin: auto;
     display: block;
+}
+
+#projects-row1 img:hover {
+    opacity: 1;
+}
+
+#projects-row2 img:hover {
+    opacity: 1;
+}
+
+#projects-row3 img:hover {
+    opacity: 1;
 }
 
 .projects-mobile {
@@ -226,7 +256,7 @@ padding-left: 2%;
 .pic4 {
     background-image: url(../assets/colours.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+ /*   background-attachment: fixed;*/
     background-position: center; 
     background-size: cover;  
     width: 100%;
@@ -234,6 +264,7 @@ padding-left: 2%;
     height: 85%;
     filter: brightness(70%);
     filter: contrast (200%);
+    opacity: 0.4;
     
     
 }
@@ -265,29 +296,61 @@ padding-left: 2%;
     transform: translate(0, -50%); 
     text-align: center;
 }
-    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries under here */
 @media only screen and (max-width: 540px) and (orientation: portrait) {
     
 
 HTML {
-    
-  width: 100%;    
+    width: 100%; 
+    margin: 0 auto;
 }
 
 body {
-width: 100%;    
+    width: 100%;   
+    margin: 0 auto;
 }
 
 body, html {
     height: 100%;
 }
 
-.topbar {}
+.topbar {
   position:relative; 
   height: 20%;
   min-height: 20%;
+    }
     
 .topname {
   position: absolute;
@@ -320,8 +383,7 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 
 .introtext {
     padding-top: 25%;
-  
-    
+      
 }
 
 .pic2 {
@@ -330,8 +392,8 @@ background-image: url(../assets/7036557-city-night-photography-11058.jpg);
 }
 
 .skills-title-mobile {
-padding-left: 5%; 
-font-size: 220%;    
+    padding-left: 5%; 
+    font-size: 220%;    
     }    
     
 .skills-desktop {
@@ -339,37 +401,45 @@ font-size: 220%;
     
 }
 
-table {
+.skills-mobile {
+    min-height: 150%;
+    height: 150%; 
+    display: table; 
+    min-width: 100%;
+    }
+    
+    
+.skills-table-mobile {
+    min-height: 150%;
+    height: 150%; 
     width: 100%;
     margin-top: 10%;
     margin-bottom: 5%;
     margin-right: 5%;
     }    
 
-.skills-mobile {
-    min-height: 85%;
-    height: 85%; 
-    display: table; 
-    min-width: 100%;
-}
-
+#skills-table-mobile-waypoint {
+     opacity: 0.4;
+    }
+    
 .skill {
-    min-width: 50%;
+    min-width: 90%;
     display: table-cell; 
     align-content: center;
 }
     
 .skill img {
     display:block;
-    margin:auto;
+    margin: 0 auto;
     width: 90px;
 }    
 .skill-caption {
     min-width: 50%;
     display: table-cell; 
     text-align: center;
-    margin-bottom: 0%;
-    padding-top: 10%;   
+    margin-left: 20%;
+    padding-top: 10%; 
+    padding-bottom: 5%;
 }
     
 .pic3 {    
@@ -395,21 +465,21 @@ table {
     width: 100%;
     max-height: 100%;
 }
-
-.projects-table-mobile .row {}
  
 .project {
     min-width: 100%;
 }
 
-.project img {
+.project img{
     height: 100%;
     width: 100%;
     max-height: 200px;
     max-width: 200px;
     margin: auto;
     display: block;
+    opacity: 1;
 }
+    
 .project-caption {
     font-size: 110%;
     padding-bottom: 5%;
@@ -458,19 +528,47 @@ table {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries under here */
-@media only screen and (max-width: 640px) and (orientation: landscape) {
+@media only screen and (max-width: 740px) and (orientation: landscape) {
  
-.topbar {
-    height: 20%;
-    min-height: 20%;
-    position: relative;
+    .topbar {
+        height: 20%;
+        min-height: 20%;
+        position: relative;
     }
-    
-.topname {
-  position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);          
+
+    .topname {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);          
     }    
 
 #firstname, #lastname {}

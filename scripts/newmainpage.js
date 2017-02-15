@@ -1,42 +1,37 @@
-var projectNumber = 1;
-showProject(projectNumber);
+$(document).ready(function(){
 
-function changePic(n) {
-  showProject(projectNumber += n);
+var elementsToChangeOpacity = ["#topbar-waypoint", "#pic1-waypoint", "#skills-table-waypoint", "#skills-table-mobile-waypoint","#pic3-waypoint", "#pic4-waypoint", "#introtext-waypoint","#pic2-waypoint"]; 
+    
+var fadeInElement = function(elementToFade){
+        $(elementToFade).waypoint({
+            handler: function() { 
+                $(elementToFade).css({"opacity":"1","transition":"all 2s"})}, 
+            offset: '50%'
+            })                    
+            return elementToFade;
 }
 
-function currentPic(n) {
-  showProject(projectNumber = n);
-}
+var fadeIn = function(){
+        for (var i = 0; i < elementsToChangeOpacity.length; i++){
+            var elementToFade = elementsToChangeOpacity[i];
+            if (elementToFade === "#pic1-waypoint") {
+                $(elementToFade).css({"opacity":"1","transition":"all 2s"})   
+            }
+            else if (elementToFade === "#topbar-waypoint"){
+                $(elementToFade).css({"opacity":"1","transition":"all 2s","transition-delay":"1s"});
+            }    
+            else {
+                fadeInElement(elementToFade);
+            }
+    }
+}   
 
-function showProject(n) {
-  var i;
-  var projectsToShow = document.getElementsByClassName("projects");
-  var dots = document.getElementsByClassName("dot");
-  if (n > projectsToShow.length) {projectNumber = 1} 
-  if (n < 1) {projectNumber = projectsToShow.length}
-  for (i = 0; i < projectsToShow.length; i++) {
-      projectsToShow[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-   
-  projectsToShow[projectNumber-1].style.display = "block"; 
-  dots[projectNumber-1].className += " active";
-console.log(projectsToShow[projectNumber-1]);    
-}
+fadeIn();
 
-/*
-$(window).load(function() {
-        if ($(window).height() > 950) {
-         animatePoints();
-                }
-        var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
-        $(window).scroll(function(event) {
-              if ($(window).scrollTop() >= scrollDistance) {
-             animatePoints();
-             }
-        });
-  })
- */
+$('#footerToTopButton').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 2000);
+        return false;
+});
+
+});

@@ -1,0 +1,233 @@
+body {
+    margin: 0px;
+}
+
+#picture-mobile, #explanatory-text-mobile, #contact-form-mobile {
+    display: none;
+    }   
+
+#back-button {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    padding: 1%;
+    z-index: 100;
+}
+
+
+#picture {
+background-image: url(../assets/ydzbi5vzy7k-james-sutton.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  
+    width: 100%;
+    min-height: 580px;
+    max-height: 100%;
+    background-color: color: #05132D;
+
+}
+
+#contact-form {
+    margin-top: 1%;
+    position: relative;
+    color: white;
+    text-emphasis: bold;
+    padding: 1% 3%;
+    width: 30%;
+    min-width: 30%;
+    max-width:500px;
+    display: block;
+    height: 30%;
+    min-height: 30%;
+    float: right;
+    clear: both;
+}
+
+input, textarea {
+    width: 70%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    resize: none;
+    border-color: lightblue;
+}
+
+textarea {
+    height: 80px;
+}
+
+#explanatory-text {
+    color: white;
+    font-size: 30px;
+    width: 40%;
+    min-width: 40%;
+    position: relative;
+    display:block;
+    clear: both;
+    margin-right: 5%;
+    margin-top: 10%;
+    text-align: left;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 540px) and (orientation: portrait) {
+
+    body {background-color: #05132D;}
+    
+#picture-mobile {
+    background-image: url(../assets/ydzbi5vzy7k-james-sutton3.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 190% auto;
+    position: relative;
+    display:block;
+    min-height:553px; 
+    max-width: 97%;
+    margin: 1% auto;
+    margin-top: 1.5%;
+}
+
+#contact-form-mobile {
+    position: fixed;
+    right: 0px;
+    margin: 0 auto;
+    align-content: center;
+    color: white;
+    width: 100%;
+    display: block;
+    clear: both;
+    height: 44%;
+    top: 58%;
+    text-align: center;
+/*    % width with a max-width in px*/
+}
+
+#explanatory-text-mobile {
+    position:absolute;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0% 0% 1% 3%;
+    display: block;
+    top: 30%;
+    
+} 
+
+    textarea {
+    height: 70px;    
+    }
+
+#picture, #explanatory-text, #contact-form{
+    display: none;
+    }
+
+#submit-button {
+    margin: 0 auto;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 740px) and (orientation: landscape) {
+
+#picture-mobile, #explanatory-text-mobile, #contact-form-mobile {
+    display: none;
+    }
+
+#back-button {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    padding: 1%;
+}
+
+    
+ #picture {
+    max-height: 415px; 
+    position: fixed; 
+    }
+    
+ #contact-form {
+    position: relative;
+    margin-right: 8%;
+    margin-top: -4%;
+    color: white;
+    text-emphasis: bold;
+    width: 20%;
+    max-width: 600px;
+    display: block;
+    float: right;
+    clear: both;
+/*    % width with a max-width in px*/
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+    
+    
+#explanatory-text {
+    
+    position: relative;
+    color: white;
+    font-size: 17px;
+    margin-right: 3%;
+    margin-top: 1%;
+    padding: 1%;
+    display: block;
+    float: right;
+    clear: both;
+    
+}    
+  
+    
+}
